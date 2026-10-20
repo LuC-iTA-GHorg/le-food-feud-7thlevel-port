@@ -1,22 +1,25 @@
 # Le Food Feud – unofficial SDL2 port of the 7th Level engine
 
-*Le Food Feud* is one of the games of *Disney's Hot Shots (Topsy Turvy series)* (7th Level, 1996), a Windows 3.1 game built on the
-**7th Level Runtime Player 1.2**. This repository builds a native 64-bit Windows version of it
+*Le Food Feud* is one of the games of *Disney's Hot Shots (Topsy Turvy series)* (7th Level, 1996), a Windows 3.1
+game built on the **7th Level Runtime Player 1.2**. This repository builds a native 64-bit Windows version of it
 with **[7thlevel-engine](https://github.com/LuC-iTA-GHorg/7thlevel-engine)**, a from-scratch
-reimplementation of that engine in C11 + SDL2, included here as a git submodule (`engine\`).
-No emulator, no virtual machine.
+reimplementation of that engine in C11 + SDL2 shared by all the 7th Level games, included here
+as a git submodule (`engine\`). No emulator, no virtual machine.
 
 > **You need your own copy of the original game.** This repository contains **no game data, no
 > original code and no original assets**. See [NOTICE.md](NOTICE.md).
 
 ## Status
 
-The port starts from `TFOODPC.BIN` and reaches the menu; the game itself is not tested yet. See the engine repository for the general status and the known differences.
+The engine implements every feature of the original 7th Level Runtime Player, and the port starts from
+`TFOODPC.BIN`. Le Food Feud has not been compared with the original game yet (only Upsy Daisy has been, screen by
+screen), so differences may remain. See the engine repository for the general status and the
+known differences.
 
 ## Requirements
 
 - Windows 10 or 11, 64-bit, and git.
-- The files of the original CD: `TFOODPC.BIN`, `TFOODPC.EXE`, `TOPSCRED.BIN`, `TOPSFINA.BIN`, `TOPSFOOD.BIN`, `TOPSMAIN.BIN`, `TOPSOPN1.BIN`, `TOPSOPN2.BIN`, `TOPSSING.BIN`, `TOPSWORD.BIN`, `TOPSY.BIN`, `TOPSYA01.DLL`, `TOPSYR01.DLL`, `TOPSYS01.DLL`, `TOPSYU01.DLL`.
+- The files of the original CD: the `.BIN` libraries (`TFOODPC.BIN`, `TOPSCRED.BIN`, `TOPSFINA.BIN`, `TOPSFOOD.BIN`, `TOPSMAIN.BIN`, `TOPSOPN1.BIN`, `TOPSOPN2.BIN`, `TOPSSING.BIN`, `TOPSWORD.BIN`, `TOPSY.BIN`), `TFOODPC.EXE` (for the icon, the cursors and the settings section). The `.DLL` files of the CD are not used.
 - About 120 MB of free space for the portable build tools (downloaded on request).
 
 ## Building
