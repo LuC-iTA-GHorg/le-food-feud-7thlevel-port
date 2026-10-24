@@ -11,6 +11,8 @@ as a git submodule (`engine\`). No emulator, no virtual machine.
 
 ## Status
 
+Update 2026-10-25 (engine `aa95168`): sprite replacement keeps the draw layers and up to 4642 collision pairs are checked, like the original (both found in Chiseler).
+
 The engine implements every feature of the original 7th Level Runtime Player, and the port starts from
 `TFOODPC.BIN`. Le Food Feud has not been compared with the original game yet (only Upsy Daisy has been, screen by
 screen), so differences may remain. See the engine repository for the general status and the
